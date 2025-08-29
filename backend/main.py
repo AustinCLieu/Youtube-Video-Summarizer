@@ -1,6 +1,7 @@
 from fastapi import FastAPI #webframework for create API server
 from pydantic import BaseModel #used to define and validate structured data(JSON)
 from fastapi.middleware.cors import CORSMiddleware #allows frontend(React) to run on a different port to communicate with backend safely
+from youtube_utils import extract_video_id, get_transcript
 
 ##Instantiates my API application
 app = FastAPI() 
