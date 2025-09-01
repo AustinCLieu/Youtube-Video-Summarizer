@@ -1,0 +1,86 @@
+/* =============================================================================
+   MODEL SELECTOR STYLES
+   ============================================================================= */
+
+.model-selector {
+    width: 100%;
+}
+
+.model-options {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.model-option {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 1.25rem;
+    background: #f7fafc;
+    border: 2px solid #e2e8f0;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: inherit;
+    text-align: left;
+    width: 100%;
+}
+
+.model-option:hover {
+    background: #edf2f7;
+    border-color: #cbd5e0;
+    transform: translateY(-1px);
+}
+
+.model-option.active {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-color: #667eea;
+    color: white;
+    box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
+}
+
+.model-icon {
+    font-size: 1.5rem;
+    opacity: 0.8;
+}
+
+.model-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.model-name {
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.model-description {
+    font-size: 0.85rem;
+    opacity: 0.8;
+    font-weight: 500;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    .model-options {
+        grid-template-columns: 1fr;
+    }
+    
+    .model-option {
+        padding: 0.875rem 1rem;
+    }
+    
+    .model-icon {
+        font-size: 1.25rem;
+    }
+    
+    .model-name {
+        font-size: 0.9rem;
+    }
+    
+    .model-description {
+        font-size: 0.8rem;
+    }
+}

@@ -5,10 +5,10 @@ export default function Header() {
         <header>
             <div>
                 <h1>
-                    <span>🎬</span>
-                    Your Social Media Video Summarizer
+                    <span>📺</span>
+                    Your YouTube Video Summarizer
                 </h1>
-                <p>Transform any social media video into clear, concise summaries of your preferred language</p>
+                <p>Transform YouTube videos into clear, concise summaries using advanced AI technology</p>
             </div>
         </header>
     )
